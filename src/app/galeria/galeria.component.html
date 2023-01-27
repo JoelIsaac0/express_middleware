@@ -1,0 +1,16 @@
+<ul>
+    <li *ngFor="let deducible of deducibles">
+      <div class="card" style="width: 18rem;">
+        <img src={{deducible.imagen}} class="card-img-top" alt={{deducible.nombre}} />
+        <div class="card-body">
+          <h5 class="card-title">{{ deducible.nombre }}</h5>
+          <p class="card-text">
+            Descripcion deducible!! <b>{{ deducible.nombre }}</b>
+          </p>
+          <button (click)="informacion()" class="btn btn-info">Información</button>
+          <button (click)="borrarDeducible(deducible.nombre)" class="btn btn-warning">Borrar</button>
+        </div>
+      </div>
+    </li>
+  </ul>
+  
